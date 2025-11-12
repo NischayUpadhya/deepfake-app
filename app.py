@@ -10,7 +10,7 @@ import os
 # Load the trained model
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('deepfake_detector.h5')
+    model = tf.keras.models.load_model('efficientnet_b4_COMPATIBLE.keras')
     return model
 
 model = load_model()
